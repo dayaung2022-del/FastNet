@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Phyo WiFi Announcement</title>
+<title>FastNet WiFi</title>
 
 <style>
 * {
@@ -26,24 +26,23 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 18px;
   background: linear-gradient(135deg, #001f3f, #0066cc, #00bfff);
-  animation: fadeOut 1s ease 15s forwards;
 }
 
 .box {
   width: 100%;
   max-width: 650px;
-  padding: 35px 25px;
+  padding: 30px 22px;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.58);
   border-radius: 25px;
   box-shadow: 0 0 30px rgba(255,255,255,0.25);
 }
 
 h1 {
-  margin: 0 0 15px;
+  margin: 0 0 12px;
   font-size: 32px;
 }
 
@@ -56,40 +55,55 @@ h1 {
 .message {
   font-size: 18px;
   line-height: 1.8;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .packages {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .package {
   background: white;
   color: #0066cc;
-  border-radius: 15px;
-  padding: 14px;
-  font-size: 23px;
+  border-radius: 14px;
+  padding: 12px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .note {
-  margin-top: 22px;
-  font-size: 17px;
-  line-height: 1.8;
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Data လက်ကျန်စစ်မယ် */
+.data-button {
+  display: block;
+  width: 100%;
+  max-width: 330px;
+  margin: 22px auto 0;
+  padding: 14px 18px;
+  background: #e60000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+.data-button:active {
+  transform: scale(0.97);
 }
 
 .thanks {
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.7;
 }
 </style>
 </head>
@@ -100,15 +114,14 @@ h1 {
 
   <div class="box">
 
-    <h1>Phyo WiFi</h1>
+    <h1>FastNet WiFi</h1>
 
     <div class="subtitle">
       ဝန်ဆောင်မှု အသိပေးကြေညာချက်
     </div>
 
     <div class="message">
-      Starlink ၏ မူဝါဒအရ<br>
-      <b>Phyo WiFi ကို GB Package စနစ်ဖြင့်သာ</b><br>
+      <b>FastNet WiFi ကို GB Package စနစ်ဖြင့်သာ</b><br>
       ရရှိနိုင်တော့မည် ဖြစ်ပါသည်။
     </div>
 
@@ -120,10 +133,6 @@ h1 {
 
       <div class="package">
         3GB — 2,000 ကျပ်
-      </div>
-
-      <div class="package">
-        5GB — 3,000 ကျပ်
       </div>
 
       <div class="package">
@@ -139,20 +148,22 @@ h1 {
       လျော့နည်းသွားမည် ဖြစ်ပါသည်။
     </div>
 
+    <!-- Data လက်ကျန်စစ်မယ် -->
+    <a
+      class="data-button"
+      href="https://www.mediafire.com/file/y6xcjdhzf9oggmi/Data_%E1%80%9C%E1%80%80%E1%80%BA%E1%80%80%E1%BB%BA%E1%94%94%E1%80%BA%E1%85%85%E1%80%85%E1%BA%BA%E1%99%9A%E1%BA%BA.apk/file"
+      target="_blank">
+      📱 Data လက်ကျန်စစ်မယ်
+    </a>
+
     <div class="thanks">
-      Phyo WiFi ကို အသုံးပြုအားပေးကြသော<br>
+      FastNet WiFi ကို အသုံးပြုအားပေးကြသော<br>
       Customer များအား ကျေးဇူးတင်ရှိပါသည်။
     </div>
 
   </div>
 
 </div>
-
-<script>
-setTimeout(function () {
-  document.getElementById("announcement").style.display = "none";
-}, 16000);
-</script>
 
 </body>
 </html>
